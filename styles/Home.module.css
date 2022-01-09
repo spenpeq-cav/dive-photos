@@ -119,9 +119,12 @@
 
 .navbar {
   background-color: rgb(4, 4, 4);
+  padding: 2rem;
+  align-items: center;
 }
 
 .navbar ul {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -130,18 +133,34 @@
 }
 
 .navbar li {
-  display: inline;
-  float: left;
+  float: right;
+  list-style-type: none;
+}
+
+.navbar li:first-child {
+  margin-right: auto;
 }
 
 .navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  color: rgb(211, 211, 211);
   text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .navbar li a:hover {
-  background-color: rgb(78, 78, 78);
+  color: rgb(151, 151, 151);
+}
+
+.navbar h1 {
+  color: rgb(211, 211, 211);
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.image-container {
+  float: left;
 }

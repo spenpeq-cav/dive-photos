@@ -1,20 +1,32 @@
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 function Navbar() {
   return (
     <div className={styles.navbar}>
       <ul>
         <li>
-          <a href="">Home</a>
+          <h1>SPEN DIVES</h1>
         </li>
         <li>
-          <a href="">Photos</a>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
         <li>
-          <a href="">Contact</a>
+          <Link href="/">
+            <a>About</a>
+          </Link>
         </li>
         <li>
-          <a href="">About</a>
+          <Link href="/">
+            <a>Locations</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>Contact</a>
+          </Link>
         </li>
       </ul>
     </div>

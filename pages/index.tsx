@@ -14,7 +14,24 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <main className={styles.main}>
-        <h1>Home</h1>
+        <div className={styles.grid}>
+          <div className="image-container">
+            <Image
+              src="/Octopus7.jpg"
+              height={900}
+              width={1600}
+              quality={100}
+            />
+          </div>
+          <div className="image-container">
+            <Image
+              src="/Octopus7.jpg"
+              height={900}
+              width={1600}
+              quality={100}
+            />
+          </div>
+        </div>
       </main>
 
       <footer className={styles.footer}>Spencer</footer>
